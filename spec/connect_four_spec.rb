@@ -118,7 +118,7 @@ describe Board do
       expect(actual).to be true
     end
   end
-  describe 'diagonal_win?' do
+  describe '#diagonal_win?' do
     it 'returns true if elements from tiles[0][0] to tiles[3][3] are all "r"' do
       board = Board.new
       board.drop_piece('r', 0)
@@ -142,8 +142,9 @@ describe Board do
       actual = board.diagonal_win?('r')
       expect(actual).to be false
     end
-
   end
-
-
 end
+
+describe ConnectFour do
+  context ""
+  
